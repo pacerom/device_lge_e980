@@ -25,6 +25,8 @@ on init
 
     mkdir /factory 0775 system system
 
+    export SECONDARY_STORAGE /storage/sdcard:/storage/usb
+
 on fs
     mount_all ./fstab.geefhd
     restorecon /sns/cal/sns.reg
